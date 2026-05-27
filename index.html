@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patrick Gorny | New York Residential Advisory</title>
+  <meta name="description" content="Patrick Gorny, Founder of PG Residential at Corra Realty Group. Buyer advisory, seller representation, and development advisory across New York City.">
+  <style>
+    :root{--bg:#f4f1eb;--ink:#1f1f1f;--soft:#ebe6dc;--line:rgba(31,31,31,.14)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none} img{display:block;max-width:100%}
+    header{position:fixed;top:0;left:0;right:0;z-index:10;backdrop-filter:blur(12px);background:rgba(244,241,235,.86);border-bottom:1px solid var(--line)}
+    .nav{max-width:1320px;margin:0 auto;padding:22px 34px;display:flex;align-items:center;justify-content:space-between}
+    .brand,.nav a,.eyebrow,.button,.stat-label,.footer{font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+    .brand{letter-spacing:.32em}.links{display:flex;gap:30px}.links a{opacity:.7}.links a:hover{opacity:1}
+    .hero{min-height:100vh;position:relative;display:flex;align-items:flex-end;padding:120px 34px 70px;overflow:hidden}
+    .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78}
+    .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(31,31,31,.82),rgba(31,31,31,.22),rgba(244,241,235,.04))}
+    .hero-content{position:relative;z-index:1;color:white;max-width:1050px}
+    h1,h2,h3,p{margin:0} h1{font-family:Georgia,serif;font-weight:400;font-size:clamp(52px,8vw,112px);line-height:.96;letter-spacing:-.06em;max-width:980px}
+    h2{font-family:Georgia,serif;font-weight:400;font-size:clamp(38px,5vw,74px);line-height:1;letter-spacing:-.045em}
+    h3{font-family:Georgia,serif;font-weight:400;font-size:28px;letter-spacing:-.025em}
+    .lead{font-size:18px;line-height:1.75;color:rgba(31,31,31,.7)} .hero .lead{color:rgba(255,255,255,.78);max-width:460px}
+    .hero-row{margin-top:38px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .button{display:inline-flex;gap:12px;align-items:center;border:1px solid currentColor;padding:16px 22px}.button.dark{background:var(--ink);color:white;border-color:var(--ink)}
+    .section{max-width:1320px;margin:0 auto;padding:110px 34px}.stats{padding-top:0}
+    .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--line);gap:1px}
+    .stat{background:var(--bg);padding:42px}.stat-value{font-family:Georgia,serif;font-size:64px;letter-spacing:-.06em}
+    .stat-label{margin-top:14px;color:rgba(31,31,31,.5);line-height:1.6}
+    .about{display:grid;grid-template-columns:1fr 1fr 1.05fr;gap:54px;align-items:start}
+    .headshot{aspect-ratio:4/5;object-fit:cover;width:100%;filter:saturate(.92)}.caption{margin-top:14px;color:rgba(31,31,31,.45);font-size:12px;letter-spacing:.16em;text-transform:uppercase}
+    .copy-stack{display:flex;flex-direction:column;gap:24px}.soft{background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .split-title{display:flex;justify-content:space-between;gap:40px;margin-bottom:64px;align-items:end}.split-title p{max-width:440px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--line);gap:1px}.card{background:var(--soft);padding:44px}
+    .num{font-size:12px;letter-spacing:.28em;color:rgba(31,31,31,.38);margin-bottom:48px}.card p{margin-top:18px;color:rgba(31,31,31,.62);line-height:1.75;font-size:14px}
+    .dev{display:grid;grid-template-columns:1fr 1.25fr;gap:88px;align-items:start}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);border:1px solid var(--line);background:var(--line);gap:1px;margin-top:36px}
+    .project{background:var(--bg);padding:28px}.project p{margin-top:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(31,31,31,.45)}
+    .portfolio-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:54px}.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}
+    .property img{aspect-ratio:4/5;width:100%;height:auto;object-fit:cover;background:#ddd}.property-info{border-top:1px solid var(--line);margin-top:18px;padding-top:18px}
+    .property .eyebrow{color:rgba(31,31,31,.45)}.property p{margin-top:10px;color:rgba(31,31,31,.62);font-size:14px}
+    .black-split{display:grid;grid-template-columns:1fr 1fr;min-height:640px}.black-copy{background:var(--ink);color:white;padding:110px 50px;display:flex;align-items:center}
+    .black-copy-inner{max-width:560px;margin:0 auto}.black-copy p{margin-top:28px;color:rgba(255,255,255,.65);line-height:1.8}.black-img img{width:100%;height:100%;object-fit:cover}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:90px}.contact-lines{display:flex;flex-direction:column;gap:18px;color:rgba(31,31,31,.72);line-height:1.7}
+    form{margin-top:36px;display:flex;flex-direction:column;gap:14px}input,textarea{width:100%;border:1px solid var(--line);background:transparent;padding:16px;font-size:14px}textarea{min-height:140px}
+    footer{border-top:1px solid var(--line);padding:34px;display:flex;justify-content:space-between;color:rgba(31,31,31,.45)}
+    @media(max-width:900px){.links{display:none}.stats-grid,.cards,.portfolio-grid,.about,.dev,.black-split,.contact{grid-template-columns:1fr}.section{padding:82px 24px}.hero{padding-left:24px;padding-right:24px}.split-title,.portfolio-head{display:block}.split-title p,.portfolio-head .button{margin-top:24px}.stat-value{font-size:52px}footer{display:block;line-height:2}}
+  </style>
+</head>
+<body>
+  <header><div class="nav"><a class="brand" href="#home">Patrick Gorny</a><nav class="links"><a href="#about">About</a><a href="#advisory">Advisory</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></nav></div></header>
+  <main id="home">
+    <section class="hero"><img src="assets/hero-terrace.png" alt="New York residential terrace"><div class="hero-content"><p class="eyebrow">New York Residential Advisory</p><h1>Real estate with discipline, design, and market perspective.</h1><div class="hero-row"><a class="button" href="mailto:patrick.g@corrarealty.com">Start a Conversation →</a><p class="lead">Patrick Gorny, Founder of PG Residential at Corra Realty Group.</p></div></div></section>
+    <section class="section stats"><div class="stats-grid"><div class="stat"><div class="stat-value">280+</div><div class="stat-label">Buyer & Seller Transactions</div></div><div class="stat"><div class="stat-value">$300M+</div><div class="stat-label">Residential Transaction Volume</div></div><div class="stat"><div class="stat-value">4</div><div class="stat-label">Development Advisory Projects</div></div></div></section>
+    <section id="about" class="section about"><div><img class="headshot" src="assets/patrick-headshot.jpeg" alt="Patrick Gorny"><p class="caption">Patrick Gorny / PG Residential</p></div><div><p class="eyebrow">Approach</p><h2>A more considered way to advise, position, and sell New York real estate.</h2></div><div class="copy-stack"><p class="lead">Patrick Gorny advises buyers, sellers, investors, and developers throughout New York City with a focus on pricing strategy, floor plan evaluation, market positioning, presentation, and long-term value.</p><p class="lead">Through PG Residential at Corra Realty Group, Patrick has represented more than 280 buyers and sellers while also advising developers on sales strategy, pricing, branding, positioning, and residential sellout execution for projects including Skyline Tower, Lucent33, The Greene, and Radiant LIC.</p></div></section>
+    <section id="advisory" class="section soft"><div class="split-title"><div><p class="eyebrow">PG Residential</p><h2>Advisory Services</h2></div><p class="lead">Built for clients who value clarity, discretion, and a more strategic real estate process.</p></div><div class="cards"><div class="card"><div class="num">01</div><h3>Buyer Advisory</h3><p>Strategic representation for buyers seeking architectural quality, strong layouts, neighborhood positioning, and long-term value across New York City.</p></div><div class="card"><div class="num">02</div><h3>Seller Representation</h3><p>Editorial presentation, pricing strategy, launch planning, negotiation, and transaction management tailored to maximize positioning and outcome.</p></div><div class="card"><div class="num">03</div><h3>Development Advisory</h3><p>Sales and marketing advisory for residential developers including pricing analysis, floor plan evaluation, branding strategy, buyer targeting, and sellout execution.</p></div></div></section>
+    <section class="section dev"><div><p class="eyebrow">Development Advisory</p><h2>Sales, marketing, and product strategy for residential developers.</h2></div><div><p class="lead">Patrick has supported developer-led residential projects through pricing strategy, sales execution, buyer positioning, and market-facing advisory across Long Island City and Brooklyn.</p><div class="project-grid"><div class="project"><h3>Skyline Tower</h3><p>Sales & Marketing Advisory</p></div><div class="project"><h3>Lucent33</h3><p>Sales & Marketing Advisory</p></div><div class="project"><h3>The Greene</h3><p>Sales & Marketing Advisory</p></div><div class="project"><h3>Radiant LIC</h3><p>Sales & Marketing Advisory</p></div></div></div></section>
+    <section id="portfolio" class="section"><div class="portfolio-head"><div><p class="eyebrow">Portfolio</p><h2>Selected Representation</h2></div><a class="button" href="mailto:patrick.g@corrarealty.com">Discuss Representation →</a></div><div class="portfolio-grid"><article class="property"><img src="assets/skyline-interior.png" alt="Skyline Tower"><div class="property-info"><p class="eyebrow">Long Island City, Queens</p><h3>Skyline Tower</h3><p>Development Advisory / Buyer Representation</p></div></article><article class="property"><img src="assets/lucent33.jpg" alt="Lucent33 Condominium"><div class="property-info"><p class="eyebrow">Long Island City, Queens</p><h3>Lucent33 Condominium</h3><p>Development Advisory / Buyer & Seller Representation</p></div></article><article class="property"><img src="assets/arris-lofts.jpg" alt="Arris Lofts"><div class="property-info"><p class="eyebrow">Long Island City, Queens</p><h3>Arris Lofts</h3><p>Leasing Representation</p></div></article></div></section>
+    <section class="black-split"><div class="black-copy"><div class="black-copy-inner"><p class="eyebrow">Market Perspective</p><h2>Strategy begins before a home reaches the market.</h2><p>From pricing and floor plan analysis to photography, staging, copy, and launch timing, every detail shapes perception and outcome.</p></div></div><div class="black-img"><img src="assets/property-1.png" alt="Residential property"></div></section>
+    <section id="contact" class="section contact"><div><p class="eyebrow">Contact</p><h2>Begin with a private conversation.</h2></div><div><div class="contact-lines"><p><strong>Email:</strong> <a href="mailto:patrick.g@corrarealty.com">patrick.g@corrarealty.com</a></p><p><strong>Phone:</strong> <a href="tel:16467372293">646-737-2293</a></p><p><strong>Affiliation:</strong> Corra Realty Group / New York City</p></div><form><input placeholder="Name"><input placeholder="Email"><textarea placeholder="How can I help?"></textarea><a class="button dark" href="mailto:patrick.g@corrarealty.com">Submit Inquiry →</a></form></div></section>
+  </main>
+  <footer class="footer"><p>© 2026 Patrick Gorny / PG Residential</p><p>Corra Realty Group</p></footer>
+</body>
+</html>
