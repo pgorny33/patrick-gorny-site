@@ -1,1 +1,0 @@
-Cinematic Hero implementation. Upload index.html and assets to GitHub, replacing current files, then redeploy in Vercel.
