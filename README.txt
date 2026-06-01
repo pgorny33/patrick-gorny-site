@@ -1,0 +1,1 @@
+Homepage copy update only. Visual design preserved. Changes: removed hero eyebrow, reduced Patrick Gorny hero name by 15%, updated title, hero copy, and metrics.
