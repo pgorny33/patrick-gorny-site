@@ -1,0 +1,1 @@
+Split Homepage B implementation. Upload index.html and assets to GitHub, replacing current site files, then redeploy in Vercel.
