@@ -1,1 +1,0 @@
-Copy update: removed Positioning section and moved PG Residential advisory section directly below hero. Visual style preserved. Upload index.html and assets to GitHub, then redeploy in Vercel.
