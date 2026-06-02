@@ -1,0 +1,1 @@
+Fix: advisory section dark olive background now spans full browser width while keeping card content aligned.
