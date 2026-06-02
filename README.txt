@@ -1,0 +1,1 @@
+Portfolio featured properties update: three curated property cards with Zillow links and Zillow profile CTA. Visual design preserved.
