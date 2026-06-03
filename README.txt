@@ -1,1 +1,0 @@
-Update: Portfolio heading increased approx 20%; Market Perspective changed to Testimonials with placeholder copy.
