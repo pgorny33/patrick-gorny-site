@@ -1,1 +1,0 @@
-New Development refinement: centered header/subheader, reduced headline size, centered phase cards and numbering.
