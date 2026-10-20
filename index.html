@@ -23,7 +23,7 @@
     body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
     a{color:inherit;text-decoration:none}
     img{display:block;max-width:100%}
-    header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(20,20,20,.35);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.14);color:white}
+    header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(20,20,20,.5);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.14);color:white}
     .nav{max-width:1360px;margin:0 auto;padding:22px 34px;display:flex;align-items:center;justify-content:space-between}
     .brand,.links a,.eyebrow,.button,.stat-label,.footer,.small-caps{font-size:12px;letter-spacing:.22em;text-transform:uppercase}
     .brand{letter-spacing:.34em}
@@ -68,7 +68,8 @@
     .split-title p{max-width:480px}
     .cards{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:var(--line);gap:1px}
     .card{background:#30322F;padding:46px}
-    .num{font-size:12px;letter-spacing:.28em;color:rgba(244,241,235,.45);margin-bottom:48px}
+    .num{font-size:12px;letter-spacing:.28em;color:rgba(244,241,235,.68);margin-bottom:48px}
+    .visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
     .card p{margin-top:18px;color:rgba(244,241,235,.78);line-height:1.8;font-size:15.5px}
 
     .dev{display:grid;grid-template-columns:1fr 1.25fr;gap:90px;align-items:start}
@@ -256,7 +257,7 @@
     min-height:300px;
   }
   .phase-card .num {
-    color:rgba(244,241,235,.45);
+    color:rgba(244,241,235,.68);
     margin-bottom:42px;
   }
   .phase-card p {
@@ -467,7 +468,7 @@
 
     <section id="advisory" class="section soft">
       <div class="split-title">
-        
+        <h2 class="visually-hidden">Advisory</h2>
       </div>
       <div class="cards">
         <div class="card"><div class="num">01</div><h3>Buyer Advisory</h3><p>I help buyers prepare, prioritize, and navigate their home search with confidence. Together, we establish a clear strategy from the earliest showings through closing, ensuring every decision aligns with your objectives.</p></div>
@@ -543,7 +544,6 @@
       <div class="note-copy">
         <p class="eyebrow">Testimonials</p>
         <h2>“From pricing strategy through closing, Patrick managed every detail with professionalism, precision, and clear communication. His guidance was instrumental in achieving a successful outcome.”</h2><p class="testimonial-attribution">— Rob, Manhattan</p>
-        <p class="lead"></p>
       </div>
       <div class="note-img"><img src="assets/property-1.jpg" alt="Residential property" width="1456" height="1070" loading="lazy" decoding="async"></div>
     </section>
