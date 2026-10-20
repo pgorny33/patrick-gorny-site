@@ -349,6 +349,32 @@
   #contact a{
     color:rgba(244,241,235,.78) !important;
   }
+  #contact input,
+  #contact select,
+  #contact textarea{
+    color:#F4F1EB;
+    border:1px solid rgba(244,241,235,.28);
+    background:transparent;
+  }
+  #contact input::placeholder,
+  #contact textarea::placeholder{
+    color:rgba(244,241,235,.55);
+  }
+  #contact select option{
+    background:#2A2B29;
+    color:#F4F1EB;
+  }
+  #contact input:focus,
+  #contact select:focus,
+  #contact textarea:focus{
+    border-color:rgba(244,241,235,.75);
+    outline:none;
+  }
+  #contact .button.dark{
+    background:#F4F1EB;
+    color:#1f1f1f;
+    border-color:#F4F1EB;
+  }
   @media(max-width:920px){
     #contact{
       padding-left:24px !important;
@@ -511,10 +537,10 @@
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
           <input type="hidden" name="_next" value="https://patrickgorny.com/#contact">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="tel" name="phone" placeholder="Phone">
-          <select name="inquiry_type" required>
+          <input type="text" name="name" placeholder="Name" aria-label="Name" autocomplete="name" required>
+          <input type="email" name="email" placeholder="Email" aria-label="Email" autocomplete="email" required>
+          <input type="tel" name="phone" placeholder="Phone" aria-label="Phone" autocomplete="tel">
+          <select name="inquiry_type" aria-label="Inquiry type" required>
             <option value="">Inquiry Type</option>
             <option value="Buying">Buying</option>
             <option value="Selling">Selling</option>
@@ -522,10 +548,9 @@
             <option value="Leasing">Leasing</option>
             <option value="General Inquiry">General Inquiry</option>
           </select>
-          <textarea name="message" placeholder="Message" required></textarea>
+          <textarea name="message" placeholder="Message" aria-label="Message" required></textarea>
           <button class="button dark" type="submit">Submit Inquiry →</button>
         </form>
-        <p class="form-note">First test submission may require email confirmation from FormSubmit before future inquiries deliver directly.</p>
       </div>
     </section>
   </main>
