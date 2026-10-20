@@ -96,11 +96,11 @@
     @media(max-width:920px){
       header{background:rgba(20,20,20,.5)}
       .links{display:none}
-      .hero{padding:108px 24px 165px;align-items:flex-start}
+      .hero{flex-direction:column;padding:108px 24px 48px;align-items:flex-start}
       .hero-inner{grid-template-columns:1fr;gap:36px}
       .portrait-card{justify-self:start;order:-1;width:min(340px,100%)}
       .hero-subcopy{margin-top:32px}
-      .hero-metrics{grid-template-columns:1fr;gap:12px;bottom:24px;left:24px;right:24px}
+      .hero-metrics{position:relative;left:auto;right:auto;bottom:auto;margin-top:56px;width:100%;grid-template-columns:1fr;gap:12px}
       .hero-metric{padding:0;gap:18px}
       .about,.cards,.portfolio-grid,.dev,.transactions,.transaction-columns,.note-section,.contact{grid-template-columns:1fr}
       .section{padding:84px 24px}
